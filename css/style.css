@@ -1,0 +1,75 @@
+:root{
+    --color-primary: #0D121E;
+    --color-secondary: #FFFFFF;
+    --color-third: #080B16;
+    --color-fourth:#FAFAFA;
+    --color-buttons:#F0B35B;
+    --color-invert-text:#646464;
+}
+body{
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+header{
+    background-color: var(--color-third);
+    height: 90px;
+}
+.nav-link.active{
+    color: var(--color-buttons) !important;
+    border: 1px solid var(--color-buttons);
+    border-radius: 10px;
+}
+.btn{
+    background-color: var(--color-buttons);
+    width: 300px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+}
+.banner__container{
+    height: 800px;
+}
+
+.sobre__container{
+    min-height: 700px;
+    background: var(--color-primary);
+}
+.sobre-img1{
+    margin-left: 12em;
+}
+.imgs2-3{
+    margin-top: -4em ;
+}
+.card-text{
+    color: var(--color-primary);
+}
+.preco{
+    width: 80px;
+    background-color:var(--color-third) ;
+    color:var(--color-secondary);
+    border-radius: 12px;
+}
+.equipe__container{
+    background: var(--color-primary);
+    min-height: 500px;
+}
+.text__equipe{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); 
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #aaa;
+}
+.text-equipe{
+    color: var(--color-buttons);
+    font-weight: bold;
+}
+.local-text{
+    border: 1px solid var(--color-secondary);
+    background: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+}
+.local-text h6{
+    font-size: 15px !important;
+}

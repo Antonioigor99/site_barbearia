@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Barber</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css -->
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <!-- fonts -->
+</head>
+
+<body>
+  <header class="row justify-content-center align-items-center">
+    <div class="media col-1">
+      <img src="img/Logo.png" alt="Logo da barbearia">
+    </div>
+    <nav class="nav align-items-center col-8">
+      <ul class="nav justify-content-center">
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Contatos</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Botão para acionar modal -->
+    <!-- Botão para acionar modal -->
+    <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#ExemploModalCentralizado">
+      Agendar horário
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+      aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="banner__container">
+      <div class="jumbotron jumbotron-fluid text-white"
+        style="background: linear-gradient(134deg, rgba(13, 18, 30, 1.0), rgba(13, 18, 30, 0.89),rgba(13, 18, 30, 0.51),rgba(13, 18, 30, 1.0), rgba(13, 18, 30, 1.0)  ), url('img/Fundo.png'); background-size: cover; height: 800px;">
+        <div class="container d-flex align-items-center justify-content-center" style="height: 100%;">
+          <div class="banner__wraper text-center">
+            <h1 class="display-4 font-weight-bold md-4">ESTILO É UM REFLEXO DA SUA ATITUDE E<br>SUA PERSONALIDADE</h1>
+            <p class="lead mb-5">Horário de funcionamento: 09:00 às 18:00</p>
+            <button type="button" class="btn btn-light btn-lg px-5" data-toggle="modal"
+              data-target="#ExemploModalCentralizado">
+              Agendar horário
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre__container container-fluid d-flex justify-content-center align-items-center">
+      <div class="sobre-wraper container d-flex align-items-center">
+        <div class="sobre-img__container">
+          <img class="sobre-img1 position-relative p-3" src="img/sobre1.png" alt="" width="289px" height="333px">
+          <div class="imgs2-3 d-flex ">
+            <img class="p-3" src="img/Sobre3.png" alt="" width="364px" height="215px">
+            <img class="p-3" src="img/Sobre2.png" alt="" width="221px" height="269px">
+          </div>
+        </div>
+        <div class="sobre-text__container d-flex flex-column p-3 text-light">
+          <h2>Sobre</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam. Amet ut dictumst
+            commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.</p>
+          <p>Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam. Amet ut dictumst
+            commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.</p>
+          <p>Horário de funcionamento 08: as 18:00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services__container container-fluid d-flex justify-content-center align-items-center ">
+      <div class="services container d-flex flex-column align-items-center row ">
+        <div class="services__texts text-center m-4 w-50" >
+          <h2>Serviços</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque mattis iaculis. In
+            viverra accumsan sagittis tempus duis a. Sagittis mollis a eu urna eget id.</p>
+        </div>
+        <div class="services services container d-flex align-items-center justify-content-between">
+          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+            <img class="card-img-top" src="img/corte_cabelo.png" alt="Imagem de capa do card">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-tex font-weight-bold">Corte de cabelo</h5>
+              <p class="card-text preco text-center">R$ 55,90</p>
+            </div>
+          </div>
+
+          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+            <img class="card-img-top" src="img/corte_complet.png" alt="Imagem de capa do card">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-tex font-weight-bold">Corte completo</h5>
+              <p class="card-text preco text-center">R$ 55,90</p>
+            </div>
+          </div>
+
+          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+            <img class="card-img-top" src="img/corte_barba.png" alt="Imagem de capa do card">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-tex font-weight-bold">Corte de Barba</h5>
+              <p class="card-text preco text-center">R$ 55,90</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="equipe__container container-fluid d-flex justify-content-center align-items-center">
+      <div class="equipe container d-flex align-items-center justify-content-between">
+        <h2 class="text__equipe ">Nossa Equipe</h2>
+        <div class="card bg-dark text-white rounded border-0 m-2">
+          <img class="card-img " src="img/funcionario3.png" alt="Imagem do card">
+          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+            <h5 class="card-title text-equipe">Lucas Silva</h5>
+          </div>
+        </div>
+        <div class="card bg-dark text-white rounded border-0 m-2">
+          <img class="card-img " src="img/funcionario2.png" alt="Imagem do card">
+          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+            <h5 class="card-title text-equipe">Henrique Souza</h5>
+          </div>
+        </div>
+        <div class="card bg-dark text-white rounded border-0 m-2">
+          <img class="card-img " src="img/funcionario1.png" alt="Imagem do card">
+          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+            <h5 class="card-title text-equipe">Tiago Mendes</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="unidades__container container-fluid d-flex justify-content-center align-items-center p-5">
+      <div class="container-unidades container d-flex flex-column align-items-center justify-content-between">
+        <h2 class="text-uppercase font-weight-bold">Nossas Unidades</h2>
+        <div class="unidades d-flex justify-content-between align-items-center">
+          <div class="card bg-dark text-white rounded border-0 m-5 ">
+            <img class="card-img " src="img/Local.png" alt="Imagem do card">
+            <div class="card-img-overlay d-flex align-items-end text-center justify-content-center ">
+              <div class="local-text d-flex flex-column align-items-center justify-content-center text-center p-2">
+                <h6 class="card-title">Rua Aguiar, n 120</h6>
+                <p>Campo Grande - MS</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded border-0 m-5 ">
+            <img class="card-img " src="img/Local2.png" alt="Imagem do card">
+            <div class="card-img-overlay d-flex align-items-end text-center justify-content-center ">
+              <div class="local-text d-flex flex-column align-items-center justify-content-center text-center p-2">
+                <h6 class="card-title">Rua Centro, n 10</h6>
+                <p>Campo Grande - MS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="container-fluid d-flex justify-content-center align-items-center p-5">
+      <div class="center container d-flex flex-column align-items-center justify-content-between">
+        <div class="logo-footer">
+          <img src="img/logo-blue 1.png" alt="">
+        </div>
+      </div>
+  </footer>
+
+  <!-- scrptis -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- scrptis -->
+  <!-- scripts opcionais -->
+  <script src="js/functions.js"></script>
+  <!-- scripts opcionais -->
+</body>
+
+</html>
