@@ -23,18 +23,24 @@
     <div class="media col-1">
       <img src="img/Logo.png" alt="Logo da barbearia">
     </div>
-    <nav class="nav align-items-center col-8">
-      <ul class="nav justify-content-center">
-        <li class="nav-item ">
-          <a class="nav-link text-light" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Contatos</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark col-md-4 col-12 ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="nav navbar-nav mr-3">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contatos</a>
+          </li>
+        </ul>
+      </div>
+
     </nav>
     <!-- Botão para acionar modal -->
     <!-- Botão para acionar modal -->
@@ -80,8 +86,8 @@
       </div>
     </section>
 
-    <section class="sobre__container container-fluid d-flex justify-content-center align-items-center">
-      <div class="sobre-wraper container d-flex align-items-center">
+    <section class="sobre__container container-fluid justify-content-center align-items-center">
+      <div class="sobre-wraper container d-flex flex-column flex-lg-row align-items-center">
         <div class="sobre-img__container">
           <img class="sobre-img1 position-relative p-3" src="img/sobre1.png" alt="" width="289px" height="333px">
           <div class="imgs2-3 d-flex ">
@@ -107,8 +113,8 @@
           <p>Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque mattis iaculis. In
             viverra accumsan sagittis tempus duis a. Sagittis mollis a eu urna eget id.</p>
         </div>
-        <div class="services services container d-flex align-items-center justify-content-between">
-          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+        <div class="services container row align-items-center justify-content-between">
+          <div class="card border-0 shadow col-12 my-5 col-md-4 bg-white rounded">
             <img class="card-img-top" src="img/corte_cabelo.png" alt="Imagem de capa do card">
             <div class="card-body d-flex justify-content-between align-items-center">
               <h5 class="card-tex font-weight-bold">Corte de cabelo</h5>
@@ -116,7 +122,7 @@
             </div>
           </div>
 
-          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+          <div class="card border-0 shadow col-12 col-md-4 my-5 bg-white rounded" >
             <img class="card-img-top" src="img/corte_complet.png" alt="Imagem de capa do card">
             <div class="card-body d-flex justify-content-between align-items-center">
               <h5 class="card-tex font-weight-bold">Corte completo</h5>
@@ -124,7 +130,7 @@
             </div>
           </div>
 
-          <div class="card m-3 border-0 shadow mb-5 bg-white rounded" w-33>
+          <div class="card border-0 shadow col-12 col-md-4 my-5 bg-white rounded">
             <img class="card-img-top" src="img/corte_barba.png" alt="Imagem de capa do card">
             <div class="card-body d-flex justify-content-between align-items-center">
               <h5 class="card-tex font-weight-bold">Corte de Barba</h5>
@@ -133,25 +139,27 @@
           </div>
       </div>
     </section>
-    <section class="equipe__container container-fluid d-flex justify-content-center align-items-center">
+    <section class="equipe__container container-fluid d-flex justify-content-center align-items-center py-5">
       <div class="equipe container d-flex align-items-center justify-content-between">
         <h2 class="text__equipe ">Nossa Equipe</h2>
-        <div class="card bg-dark text-white rounded border-0 m-2">
-          <img class="card-img " src="img/funcionario3.png" alt="Imagem do card">
-          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
-            <h5 class="card-title text-equipe">Lucas Silva</h5>
+        <div class="equipe__imgs row align-items-center justify-content-between">
+          <div class="card bg-dark text-white rounded border-0 m-2">
+            <img class="card-img " src="img/funcionario3.png" alt="Imagem do card">
+            <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+              <h5 class="card-title text-equipe">Lucas Silva</h5>
+            </div>
           </div>
-        </div>
-        <div class="card bg-dark text-white rounded border-0 m-2">
-          <img class="card-img " src="img/funcionario2.png" alt="Imagem do card">
-          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
-            <h5 class="card-title text-equipe">Henrique Souza</h5>
+          <div class="card bg-dark text-white rounded border-0 m-2">
+            <img class="card-img " src="img/funcionario2.png" alt="Imagem do card">
+            <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+              <h5 class="card-title text-equipe">Henrique Souza</h5>
+            </div>
           </div>
-        </div>
-        <div class="card bg-dark text-white rounded border-0 m-2">
-          <img class="card-img " src="img/funcionario1.png" alt="Imagem do card">
-          <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
-            <h5 class="card-title text-equipe">Tiago Mendes</h5>
+          <div class="card bg-dark text-white rounded border-0 m-2">
+            <img class="card-img " src="img/funcionario1.png" alt="Imagem do card">
+            <div class="card-img-overlay d-flex align-items-end text-center justify-content-center">
+              <h5 class="card-title text-equipe">Tiago Mendes</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -159,8 +167,8 @@
     <section class="unidades__container container-fluid d-flex justify-content-center align-items-center p-5">
       <div class="container-unidades container d-flex flex-column align-items-center justify-content-between">
         <h2 class="text-uppercase font-weight-bold">Nossas Unidades</h2>
-        <div class="unidades d-flex justify-content-between align-items-center">
-          <div class="card bg-dark text-white rounded border-0 m-5 ">
+        <div class="unidades row justify-content-center align-items-center">
+          <div class="card bg-dark text-white rounded border-0 m-3 ">
             <img class="card-img " src="img/Local.png" alt="Imagem do card">
             <div class="card-img-overlay d-flex align-items-end text-center justify-content-center ">
               <div class="local-text d-flex flex-column align-items-center justify-content-center text-center p-2">
@@ -169,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-dark text-white rounded border-0 m-5 ">
+          <div class="card bg-dark text-white rounded border-0 m-3 ">
             <img class="card-img " src="img/Local2.png" alt="Imagem do card">
             <div class="card-img-overlay d-flex align-items-end text-center justify-content-center ">
               <div class="local-text d-flex flex-column align-items-center justify-content-center text-center p-2">
